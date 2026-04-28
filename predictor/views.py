@@ -47,12 +47,13 @@ def heuristic_predict(current_desc, prev_desc):
     if not current_regions or not prev_regions:
         return "ambiguous"
 
-    # Direct overlap = relevant
+    # Direct overlap = relevant (high confidence)
     if current_regions & prev_regions:
         return "relevant"
 
-    # No overlap at all = not relevant
-    return "not_relevant"
+    # If regions are completely unrelated AND both are clearly identified,
+    # still send to LLM — the report text might reveal a connection
+    return "ambiguous"
 
 
 def make_cache_key(current_study, previous_exam):
