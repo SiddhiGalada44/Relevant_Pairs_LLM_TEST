@@ -13,14 +13,26 @@ CACHE = {}
 
 # --- Body region mappings ---
 REGION_KEYWORDS = {
-    "head": ["BRAIN", "HEAD", "SKULL", "NEURO", "INTRACRANIAL", "CRANIAL", "ORBIT", "SELLA", "IAC", "FACE", "SINUS"],
-    "neck": ["NECK", "THYROID", "CAROTID", "SOFT TISSUE NECK"],
-    "chest": ["CHEST", "LUNG", "THORAX", "CARDIAC", "HEART", "PULMONARY", "RIBS"],
-    "abdomen": ["ABDOMEN", "LIVER", "KIDNEY", "RENAL", "PELVIS", "PANCREAS", "GALLBLADDER", "BOWEL", "COLON", "APPENDIX"],
-    "spine": ["SPINE", "CERVICAL", "LUMBAR", "THORACIC", "SACRAL", "VERTEBR"],
-    "upper_extremity": ["SHOULDER", "ELBOW", "WRIST", "HAND", "HUMERUS", "FOREARM", "FINGER"],
-    "lower_extremity": ["HIP", "KNEE", "ANKLE", "FOOT", "FEMUR", "TIBIA", "TOE"],
-    "vascular": ["ANGIO", "AORTA", "VENOUS", "ARTERIAL", "VASCULAR", "MRA", "CTA"],
+    "head": ["BRAIN", "HEAD", "SKULL", "NEURO", "INTRACRANIAL", "CRANIAL", 
+             "ORBIT", "SELLA", "IAC", "FACE", "SINUS", "TEMPORAL", "PITUITARY",
+             "STROKE", "CRANIO"],
+    "neck": ["NECK", "THYROID", "CAROTID", "SOFT TISSUE NECK", "LARYNX", "PHARYNX"],
+    "chest": ["CHEST", "LUNG", "THORAX", "CARDIAC", "HEART", "PULMONARY", 
+              "RIBS", "MEDIASTIN", "PLEURAL", "CORONARY", "ECHO"],
+    "abdomen": ["ABDOMEN", "LIVER", "KIDNEY", "RENAL", "PANCREAS", 
+                "GALLBLADDER", "BOWEL", "COLON", "APPENDIX", "SPLEEN",
+                "HEPAT", "BILE", "MESENTERY", "RETROPERITON"],
+    "pelvis": ["PELVIS", "BLADDER", "PROSTATE", "UTERUS", "OVARY", "RECTAL",
+               "SACROILIAC", "GROIN"],
+    "spine": ["SPINE", "CERVICAL SPINE", "LUMBAR", "THORACIC SPINE", "SACRAL", 
+              "VERTEBR", "C-SPINE", "L-SPINE", "T-SPINE"],
+    "upper_extremity": ["SHOULDER", "ELBOW", "WRIST", "HAND", "HUMERUS", 
+                        "FOREARM", "FINGER", "CLAVICLE", "UPPER EXTREM"],
+    "lower_extremity": ["HIP", "KNEE", "ANKLE", "FOOT", "FEMUR", "TIBIA", 
+                        "TOE", "LOWER EXTREM", "CALCANEUS"],
+    "vascular": ["ANGIO", "AORTA", "VENOUS", "ARTERIAL", "VASCULAR", "MRA", 
+                 "CTA", "DOPPLER", "RUNOFF"],
+    "breast": ["BREAST", "MAMMO", "TOMOSYN"],
 }
 
 
