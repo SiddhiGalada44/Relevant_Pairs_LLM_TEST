@@ -119,7 +119,7 @@ def llm_predict_batch(case_id, current_study, exams_to_check):
 def predict_case(case):
     case_id = case["case_id"]
     current_study = case["current_study"]
-    previous_exams = case.get("previous_examinations", [])
+    previous_exams = case.get("previous_examinations") or case.get("prior_studies", [])
 
     if not previous_exams:
         return []
